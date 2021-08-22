@@ -63,6 +63,7 @@ pub fn function() {
 }
 
 fn plus_one(x: i32) -> i32 {
+  // a function will return the value of the last expression, no semicolon here.
   x + 1
 }
 
@@ -70,11 +71,32 @@ pub fn loops() {
   // Loops
   let a = [10, 20, 30, 40, 50];
 
-  for element in a.iter() {
+  for element in a {
     println!("the value of a array is {}", element);
   }
 
   for num in (1..5).rev() {
     println!("{}!", num);
   }
+
+  // Returning Values from Loops
+  let mut counter = 0;
+
+  let result = loop {
+    counter += 1;
+
+    if counter == 10 {
+      break counter * 2;
+    }
+  };
+
+  println!("The result is {}", result);
+}
+
+pub fn control_flow() {
+  // Using if in a let Statement
+  let condition = true;
+  let number = if condition { 5 } else { 6 };
+
+  println!("The value of number is: {}", number);
 }

@@ -6,4 +6,5 @@ fn main() {
     ch03::compound_type();
     ch03::function();
     ch03::loops();
+    ch03::control_flow();
 }
