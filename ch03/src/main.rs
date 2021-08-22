@@ -1,3 +1,5 @@
+mod ch03;
+
 fn main() {
     // variables are immutable. use let to declare a variable.
     let x = 5;
@@ -27,6 +29,8 @@ fn main() {
     let t = true;
     let c = '🥰';
     println!("f:{},i:{},t:{},c:{}", f, i, t, c);
+
+    ch03::print_array();
 
     // Tuple
     let tup: (u32, f64, u8) = (345, 4.332, 24);
