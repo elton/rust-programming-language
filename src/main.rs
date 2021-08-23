@@ -1,4 +1,5 @@
 mod ch03;
+mod ch04;
 
 fn main() {
     ch03::basic_type();
@@ -7,4 +8,6 @@ fn main() {
     ch03::function();
     ch03::loops();
     ch03::control_flow();
+
+    ch04::string_owner();
 }
