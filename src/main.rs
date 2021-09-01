@@ -10,4 +10,5 @@ fn main() {
     ch03::control_flow();
 
     ch04::string_owner();
+    ch04::find_1st_word();
 }

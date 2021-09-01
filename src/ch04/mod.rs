@@ -8,3 +8,22 @@ pub fn string_owner() {
   s.push_str(", world!");
   println!("{}", s);
 }
+
+fn first_word(s: &String) -> &str {
+  let bytes = s.as_bytes();
+
+  for (i, &item) in bytes.iter().enumerate() {
+    if item == b' ' {
+      return &s[0..i];
+    }
+  }
+
+  &s[..]
+}
+
+pub fn find_1st_word() {
+  let s = String::from("Hello world!");
+  let word = first_word(&s);
+
+  println!("the first word is : {}", word);
+}
