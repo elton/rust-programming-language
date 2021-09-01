@@ -47,3 +47,10 @@ pub fn find_1st_word() {
   let word = first_word(my_string_literal);
   println!("{}", word);
 }
+
+pub fn slices() {
+  let a = [1, 2, 3, 4, 5];
+  let slice = &a[1..3];
+
+  assert_eq!(slice, &[2, 3]);
+}

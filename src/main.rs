@@ -11,4 +11,5 @@ fn main() {
 
     ch04::string_owner();
     ch04::find_1st_word();
+    ch04::slices();
 }
