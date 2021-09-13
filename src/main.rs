@@ -1,5 +1,6 @@
 mod ch03;
 mod ch04;
+mod ch05;
 
 fn main() {
     ch03::basic_type();
@@ -12,4 +13,6 @@ fn main() {
     ch04::string_owner();
     ch04::find_1st_word();
     ch04::slices();
+
+    ch05::calc_area();
 }
